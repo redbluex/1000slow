@@ -16,5 +16,18 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Word" />
+        android:text="Word"
+        android:textSize="60dp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/textAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textWord"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="TextView"
+        android:textSize="30dp"
+        android:textColor="@color/colorBlack"/>
 </RelativeLayout>
