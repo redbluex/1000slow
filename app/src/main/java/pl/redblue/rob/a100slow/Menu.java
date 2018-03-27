@@ -16,12 +16,12 @@ public class Menu extends AppCompatActivity {
     }
 
     public void train(View view){
-        Intent i = new Intent(Menu.this, Testowa.class);
+        Intent i = new Intent(Menu.this, Training.class);
         startActivity(i);
     }
 
     public void test(View view){
-        Intent i = new Intent(Menu.this, Training.class);
+        Intent i = new Intent(Menu.this, Testowa.class);
         startActivity(i);
     }
 }

@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
                 Intent intent = new Intent(MainActivity.this, Menu.class);
-                positionID = position;
+                positionID = position+1;
                 startActivity(intent);
             }
         });
