@@ -1,6 +1,7 @@
 package pl.redblue.rob.a100slow;
 
 
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.Scanner;
@@ -13,7 +14,8 @@ import static pl.redblue.rob.a100slow.MainActivity.positionID;
 
 public class TestSpecial {
     private int points;
-    public String [] wordString;
+    private String textWord;
+    private String [] wordString;
     private String [] answerString;
 
 
@@ -21,15 +23,24 @@ public class TestSpecial {
         points = 0;
         wordString = new String[40];
         answerString = new String[40];
+        textWord = "X";
 
+    }
+
+    public String getTextWord() {
+        return textWord;
+    }
+
+    public void setTextWord(String textWord) {
+        this.textWord = textWord;
     }
 
     public int getPoints() {
         return points;
     }
 
-    public String[] getAnswerString() {
-        return answerString;
+    public String getAnswerString(int n) {
+        return this.answerString[n];
     }
 
     public String getWordString(int n) {
@@ -48,8 +59,8 @@ public class TestSpecial {
         this.points = points;
     }
 
-    public void checkAnswer(int x){
-        if(wordString[x].equals(answerString[x]))
+    public void checkAnswer(int x, String correctWord){
+        if(correctWord.equals(answerString[x]))
             points++;
     }
 
@@ -65,6 +76,8 @@ public class TestSpecial {
             i++;
         }
     }
+
+
 
 
 
