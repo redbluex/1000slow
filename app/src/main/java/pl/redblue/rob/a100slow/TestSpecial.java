@@ -60,8 +60,18 @@ public class TestSpecial {
     }
 
     public void checkAnswer(int x, String correctWord){
-        if(correctWord.equals(answerString[x]))
-            points++;
+
+        String s = answerString[x];
+
+        String[] arr = s.split(", ");
+
+        for ( String ss : arr) {
+
+            if(correctWord.equals(ss))
+                points++;
+        }
+
+
     }
 
     public void loadQuestions(Scanner odczyt, Scanner odczyt2){
