@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     static int positionID = 0;
+    static PassExam pass = new PassExam();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

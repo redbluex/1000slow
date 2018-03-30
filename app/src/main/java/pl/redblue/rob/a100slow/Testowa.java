@@ -13,6 +13,7 @@ import android.widget.Toast;
 import java.util.Random;
 import java.util.Scanner;
 
+import static pl.redblue.rob.a100slow.MainActivity.pass;
 import static pl.redblue.rob.a100slow.MainActivity.positionID;
 
 public class Testowa extends AppCompatActivity {
@@ -45,13 +46,20 @@ public class Testowa extends AppCompatActivity {
                 changeTextView(test1);
                 quantintyQuestions++;
                 if(quantintyQuestions>20){
+                    if(test1.getPoints()>17){
+                        pass.examPassed();
+                    }
+                    if(test1.getPoints()<17){
+                        pass.examFail();
+                    }
                     Intent i = new Intent(Testowa.this, MainActivity.class);
                     Context context = getApplicationContext();
-                    CharSequence text = "Zdobyłeś: "+test1.getPoints()+" punktów na "+(quantintyQuestions-1)+" możliwych.";
+                    CharSequence text = "Zdobyłeś: "+test1.getPoints()+" punktów na "+(quantintyQuestions-1)+" możliwych. "+pass.getStringPass();
                     Toast toast = Toast.makeText(context, text, Toast.LENGTH_SHORT);
                     toast.show();
                     startActivity(i);
                 }
+
             }
         });
 
