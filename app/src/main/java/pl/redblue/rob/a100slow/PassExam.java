@@ -5,7 +5,7 @@ public class PassExam {
     private String stringPass;
 
     PassExam(){
-        numberPass = 0;
+        numberPass = 1;
     }
 
     public String getStringPass() {

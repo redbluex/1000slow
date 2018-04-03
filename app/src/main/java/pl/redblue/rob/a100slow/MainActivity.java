@@ -22,12 +22,15 @@ public class MainActivity extends AppCompatActivity {
         GridView gridview = (GridView) findViewById(R.id.gridview);
         gridview.setAdapter(new ImageAdapter(this));
 
+
+
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
                 Intent intent = new Intent(MainActivity.this, Menu.class);
                 positionID = position+1;
-                startActivity(intent);
+                if(positionID<=pass.getNumberPass())
+                    startActivity(intent);
             }
         });
 
