@@ -1,16 +1,16 @@
 przy, w , o , na
 stary
 jeden
-także , za	tu
-mieć
+także , za, takze
+mieć, miec
 ten sam, taki sam
 ten, ta
-powiedzieć
+powiedzieć, powiedziec
 od, z
-robić
+robić, robic
 albo
 komplet, grupa
-miał , mieliśmy
+miał, mieliśmy, mial, mielismy
 trzy
 przez
 chcieć
@@ -21,19 +21,19 @@ cóż, dobrze
 ale
 także
 co
-grać, gra
-kilka, niektóre
-małe
+grać, gra, grac
+kilka, niektóre, niektore
+małe, male
 my
-koniec, kończyć
-umieć, potrafić
+koniec, kończyć, konczyc
+umieć, potrafić, umiec, potrafic
 położyć
 zewnątrz
 dom
 inne
-czytać
-byli, byłeś
-dłoń
+czytać, czytac
+byli, byłeś, byles
+dłoń, dlon
 wszystko
 port
 tam
