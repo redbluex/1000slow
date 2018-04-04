@@ -74,7 +74,8 @@ public class Training extends AppCompatActivity {
             case 1: odczyt = new Scanner(getResources().openRawResource(R.raw.a1));
                     odczyt2 = new Scanner(getResources().openRawResource(R.raw.b1));
                 break;
-            case 2: odczyt = new Scanner(getResources().openRawResource(R.raw.a1));
+            case 2: odczyt = new Scanner(getResources().openRawResource(R.raw.a2));
+                    odczyt2 = new Scanner(getResources().openRawResource(R.raw.b2));
                 break;
             case 3: odczyt = new Scanner(getResources().openRawResource(R.raw.a1));
                 break;
