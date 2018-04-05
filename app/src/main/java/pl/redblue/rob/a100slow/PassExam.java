@@ -27,6 +27,7 @@ public class PassExam {
     public void examPassed(){
         numberPass++;
         stringPass = "Brawo zdałeś!";
+
     }
 
     public void examFail(){

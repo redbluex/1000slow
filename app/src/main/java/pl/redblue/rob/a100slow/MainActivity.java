@@ -1,6 +1,8 @@
 package pl.redblue.rob.a100slow;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,15 +13,23 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
+
     static int positionID = 0;
     static PassExam pass = new PassExam();
     ImageAdapter imgAdapter = new ImageAdapter(this);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        sharedPreferences = getSharedPreferences("pl.redblue.rob.ad100slow", Context.MODE_PRIVATE);
+        editor = sharedPreferences.edit();
+        editor.putInt("Level", pass.getNumberPass());
+        editor.commit();
+        pass.setNumberPass(sharedPreferences.getInt("Level", 1));
 
         GridView gridview = (GridView) findViewById(R.id.gridview);
         gridview.setAdapter(imgAdapter);
@@ -35,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
             }
         });
+
+
 
     }
 
