@@ -14,10 +14,13 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="Training"
+        android:text="Trening"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="train"/>
+        android:onClick="train"
+        android:background="#001f4d"
+        android:textColor="#fff"
+        android:textSize="23dp"/>
 
 
 
@@ -31,5 +34,8 @@
         android:text="Test"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="test"/>
+        android:onClick="test"
+        android:background="#005ce6"
+        android:textColor="#fff"
+        android:textSize="23dp"/>
 </RelativeLayout>
